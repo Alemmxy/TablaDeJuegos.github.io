@@ -1,0 +1,109 @@
+:root {
+    --rojo-principal: #D90416;
+    --rojo-secundario: #BF0404;
+    --neutro: #BFBFBF;
+    --gris: #8C8C8C;
+    --negro: #262626;
+}
+
+/*Globales*/
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.title {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/*Contenedor*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #12c2e9;
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    /*box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color;*/
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    padding: 2rem;
+}
+
+/*Tabla*/
+.table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse; /* Para asegurarse de que los bordes redondeados se vean correctamente */
+    border-radius: 10px;
+}
+
+.table td,
+.table th {
+    border: solid;
+    padding: 1rem;
+    text-align: left;
+}
+
+.fa-soli, 
+.fa-star,
+.fa-star-o {
+    color: #ffc400;
+}
+
+/*Títulos*/
+.title-item {
+    /*border-bottom: estilo, tamaño / peso, color;
+      margin: arriba derecha abajo izquierda; (para 4 valores)
+      margin: arriba/abajo derecha/izquierda; (para 2 valores)
+      padding: arriba derecha abajo izquierda; (para 4 valores)
+      padding: arriba/abajo derecha/izquierda; (para 2 valores)*/
+    border-bottom: solid 2px #f64f59;
+    padding-bottom: 1rem;
+}
+
+.position {
+    background-color: #f64f59;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+
+.sinopsis {
+    display: flex;
+}
+
+.sinopsis img {
+    border-radius: 5rem;
+    width: 25rem;
+    height: 375.4px;
+    margin-left: 2.5rem;
+}
